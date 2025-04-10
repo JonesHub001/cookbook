@@ -1,0 +1,32 @@
+How Last Four Digits are Stored in Payment Submissions
+
+Location of Implementation: src/components/ContactForm.tsx
+
+Specific Code Logic:
+1. In the onSubmit function, the last four digits are extracted using slice method:
+   ```typescript
+   const cardLastFour = data.cardNumber.slice(-4);
+   ```
+
+This approach ensures that:
+- Only the last 4 digits are stored
+- Full card number is never persisted
+- The extraction happens right before database insertion
+
+Security Considerations:
+- Removes the full card number from storage
+- Provides just enough information for potential reference
+- Follows payment data protection best practices
+
+Supabase Insertion Point:
+```typescript
+await supabase
+  .from('payment_submissions')
+  .insert({
+    // ... other fields
+    card_last_four: cardLastFour,
+    // ... 
+  });
+```
+
+Note: This method safely masks the complete card number while retaining a minimal identifier for potential future reference.
