@@ -12,22 +12,22 @@ const Testimonials = () => {
   
   const testimonials = [
     {
-      name: "Emma Thompson",
+      name: "Tonya M.",
       quote: "This cookbook transformed our family meals. The recipes are straightforward and every dish has become a household favorite!",
       rating: 5,
-      image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80"
+      image: "/lovable-uploads/Tonya M.jpg"
     },
     {
-      name: "David Chen",
+      name: "Julie C",
       quote: "As a Beaconsfield resident, I love how this cookbook captures our community's culinary heritage. The seasonal recipes are perfect for gatherings!",
       rating: 5,
-      image: "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80"
+      image: "/lovable-uploads/JulieC.jpg"
     },
     {
-      name: "Olivia Martinez",
+      name: "Sindie C.",
       quote: "I've tried many cookbooks, but this one stands out. The recipes are approachable yet impressive - perfect for both everyday cooking and special occasions.",
       rating: 5,
-      image: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80"
+      image: "/lovable-uploads/sindie.jpg"
     },
   ];
 

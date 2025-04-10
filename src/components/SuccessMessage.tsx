@@ -14,7 +14,7 @@ const SuccessMessage = ({ onReset }: SuccessMessageProps) => {
       </div>
       <h3 className="text-2xl font-bold text-cookbook-brown mb-3">Thank You!</h3>
       <p className="text-cookbook-brown/80 mb-6 max-w-md mx-auto">
-        Your information has been submitted successfully. We'll be in touch shortly with details about your cookbook.
+        Payment request has been submitted successfully. You will soon receive your copy!.
       </p>
       <Button onClick={onReset} className="btn-secondary">
         Return to Form
